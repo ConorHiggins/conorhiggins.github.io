@@ -25,6 +25,7 @@
   @import "./styles/mixins/breakpoints";
 
   html, body {
+    min-width: 320px;
     height: 100%;
     margin: 0;
     font-family: 'Nunito', sans-serif;

@@ -20,6 +20,15 @@
     <p>
       {{item.what}}
     </p>
+
+    <div class="timeline-event__tags" v-if="item.skills && item.skills.length">
+
+      <span class="timeline-event__tag"
+        v-for="skill in item.skills"
+        :key="skill">
+        {{skill}}
+      </span>
+    </div>
   </div>
 </template>
 
@@ -71,6 +80,25 @@
 
     &__title {
       font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    &__tags {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    &__tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      border-radius: 12px;
+      background-color: #f2f2f2;
+      padding: 4px 12px;
+      font-size: 14px;
       margin-bottom: 4px;
     }
   }

@@ -2,8 +2,8 @@
   <div class="sidebar">
     <div class="sidebar__profile">
       <img src="../assets/avatar.png">
-      <h1>Conor Higgins</h1>
-      <h3>Fullstack Engineer, UXE, Builder of Things, Wearer of many hats</h3>
+      <h2>Conor Higgins</h2>
+      <h3>Fullstack Engineer, Tech Lead, Wearer of many hats</h3>
     </div>
 
     <div class="sidebar__contact">
@@ -87,7 +87,7 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      margin-bottom: 32px;
+      margin: 16px 0;
       object-fit: cover;
     }
 

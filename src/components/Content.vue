@@ -9,7 +9,7 @@
           </p>
 
           <p>
-
+            I enjoy all aspects of engineering and leadership, from designing solutions to key problems, to growing talented customer-focused teams.
           </p>
         </div>
 
@@ -57,7 +57,7 @@
       </div>
     </div>
 
-    <div class="content__section">
+    <div class="content__section content__section--experience">
       <h2>Experience</h2>
       <div class="content__row"
           v-for="item in history"
@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="content__section">
+    <div class="content__section content__section--education">
       <div class="content__column content__column--50">
         <h2>Education</h2>
         <div class="content__row"
@@ -85,8 +85,8 @@
       </div>
     </div>
 
-    <div class="content__section">
-      <h2>Publications</h2>
+    <div class="content__section content__section--writing">
+      <h2>Writing</h2>
       <div class="content__row">
         <ul>
           <li>
@@ -129,16 +129,15 @@
           {
             title: "Teamwork.com",
             subtitle: '',
-            where: '',
             icon: 'far fa-handshake',
-            roles: ['Fullstack Engineer', 'Tech Lead'],
-            what: 'SANTA is a cross-platform web application for users with aphasia. The application uses text-to-speech in order to teach aphasic users to speak and enunciate words. I am responsible for all aspects of the system\'s design, development and user acceptance testing.',
-            when: '2014 - 2015',
+            skills: ['Vue', 'Go', 'Coffeescript', 'KnockoutJS', 'Coldfusion', 'Product Analytics (Pendo)', 'SQL (MariaDB)', 'Redis', 'Hiring', 'Planning'],
+            what: "As Technical Lead of Teamwork's main product, I have been responsible for all areas of the product's delivery, including cross-fuctional hiring, product planning and reviews.",
+            when: '2015 - present',
           },
           {
             title: "SANTA",
             subtitle: 'Self-Administered Naming Therapy for Aphasia',
-            roles: ['Research', 'Engineering'],
+            skills: ['Research', 'Prototyping (Balsamiq)', 'Firebase', 'Angular', 'Objective-C'],
             icon: 'fas fa-flask',
             where: 'Department of Clinical Therapies, UL',
             what: 'SANTA is a cross-platform web application for users with aphasia. The application uses text-to-speech in order to teach aphasic users to speak and enunciate words. I am responsible for all aspects of the system\'s design, development and user acceptance testing.',
@@ -147,45 +146,40 @@
           {
             title: "Triana Care",
             subtitle: '',
-            roles: ['UXE', 'Full Stack Engineer'],
+            skills: ['Prototyping (Balsamiq)', 'Laravel', 'Angular', 'ElasticSearch'],
             icon: 'fas fa-shapes',
-            where: '',
             what: 'Triana Care has led to the creation of software systems for the US hospice industry to improve the level of patient care. I have been solely responsible for the system\'s user experience and evaluation. I have also contributed to much of the system\'s front-end and back-end architecture.',
             when: '2014 - 2015',
           },
           {
             title: "iTRAC Global",
             subtitle: '',
-            roles: ['UXE', 'Full Stack Engineer'],
+            skills: ['Angular', 'Laravel', 'Elasticsearch'],
             icon: 'fas fa-laptop',
-            where: '',
             what: 'iTRAC Global is a global customs and excise software package. As the project’s first and longest-serving developer, I have been responsible for defining much of the system architecture and implementing designs concepts.',
             when: '2012 - 2014',
           },
           {
             title: "22 Touch",
             subtitle: '',
-            roles: ['UXE', 'Full Stack Engineer'],
+            skills: ['ExpressionEngine', 'JS'],
             icon: 'fas fa-robot',
-            where: '',
             what: '22 Touch is a referral marketing web application. I was involved in both the redesign and implementation of the system, developing a series of new features and designing a genetic algorithm on which the application is heavily dependent.',
             when: '2012 - 2014',
           },
           {
             title: "Elite Edge",
             subtitle: '',
-            roles: ['UXE', 'Full Stack Engineer'],
+            skills: ['JS', 'PHP', 'Flex/Flash Builder'],
             icon: 'fas fa-running',
-            where: '',
             what: 'Elite Edge is a cross-platform sports science application. To date the application has been extensively used by the British and Irish Lions, the National Athlete Development Academy and Munster Rugby. I am responsible for the system\'s requirements gathering, back-end design and front-end development.',
             when: '2010 - 2014',
           },
           {
             title: "Tricycle Interactive Ltd",
             subtitle: '',
-            roles: ['UXE', 'Full Stack Engineer'],
+            skills: ['Objective-C', 'PHP', 'JS', 'Flex/Flash Builder'],
             icon: 'far fa-thumbs-up',
-            where: '',
             what: 'I rebuilt and extended the WRU sports science system, creating a suite of new features, implementing a usercentered design approach in the process. Additionally, I led a number of projects for clients including iOS applications for MotorCheck and Opoko.',
             when: '2010 - 2011',
           },
@@ -237,29 +231,53 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  @import "../styles/mixins/breakpoints";
+
   .content {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    box-sizing: border-box;
-    padding: 0 32px;
+
+    @include for-tablet-landscape-up {
+      padding: 0 32px;
+    }
+
+    p:not(:first-child) {
+      margin-top: 16px;
+    }
 
     &__section {
       display: flex;
       flex-wrap: wrap;
       background-color: white;
       border-radius: 8px;
-      padding: 16px 32px;
+      padding: 32px;
       margin-bottom: 32px;
+    }
+
+    &__section:last-child {
+      margin-bottom: 0;
+    }
+
+    &__section--writing {
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        padding: 8px 0;
+      }
     }
 
     &__row {
       flex: 1 0 100%;
       display: flex;
+      flex-wrap: wrap;
     }
 
     &__column {
-      flex: 1 0 auto;
+      flex: 1 1 auto;
     }
 
     &__column--50 {
@@ -274,8 +292,20 @@
       }
     }
 
-    &__column--25 {
-      flex: 1 0 25%;
+    @include for-phone-only {
+      .content__column,
+      .content__column--50 {
+        flex: 1 0 100%;
+        padding: 0;
+
+        + .content__column {
+          margin-top: 16px;
+        }
+      }
+
+      .content__skills {
+        margin: 32px 0;
+      }
     }
 
     .logos {
@@ -284,6 +314,7 @@
       justify-content: center;
       flex-wrap: wrap;
       padding: 16px 0;
+
     }
 
     .logos img {
@@ -291,6 +322,11 @@
       margin: 16px 32px;
       cursor: pointer;
       filter: opacity(0.3) saturate(0);
+
+      @include for-phone-only {
+        height: 48px;
+        margin: 16px;
+      }
 
       &:hover {
         filter: none;
