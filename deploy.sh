@@ -9,7 +9,7 @@ npm run build
 # navigate into the build output directory
 echo "Move to dist directory"
 cd dist
-# mv *.* ../
+rsync -avz * ../
 
 # if you are deploying to a custom domain
 echo 'Now deploying'
