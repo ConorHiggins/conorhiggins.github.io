@@ -7,12 +7,14 @@ set -e
 npm run build
 
 # navigate into the build output directory
+echo "Move to dist directory"
 cd dist
+mv *.* ../
 
 # if you are deploying to a custom domain
 echo 'Now deploying'
 
-git init
+# git init
 git add -A
 git commit -m 'deploy'
 
