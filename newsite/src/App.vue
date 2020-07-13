@@ -20,7 +20,10 @@
   }
 </script>
 
-<style>
+<style lang="scss">
+
+  @import "./styles/mixins/breakpoints";
+
   html, body {
     height: 100%;
     margin: 0;
@@ -43,6 +46,12 @@
 
   .wrapper {
     display: flex;
+    flex-direction: column;
     padding: 16px;
+
+    @include for-tablet-landscape-up {
+      flex-direction: row;
+    }
   }
+
 </style>
