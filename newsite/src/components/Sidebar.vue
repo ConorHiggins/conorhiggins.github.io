@@ -3,7 +3,7 @@
     <div class="sidebar__profile">
       <img src="../assets/avatar.png">
       <h1>Conor Higgins</h1>
-      <h3>Engineer, Tech Jesus</h3>
+      <h3>Fullstack Engineer, UXE, Builder of Things, Wearer of many hats</h3>
     </div>
 
     <div class="sidebar__contact">
@@ -50,7 +50,9 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
+
+  @import "../styles/mixins/breakpoints";
 
   h1, h3 {
     margin: 0;
@@ -64,7 +66,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 320px;
+    // width: 320px;
     padding: 32px;
     background-color: #3f51b5;
     border-radius: 8px;
@@ -72,9 +74,14 @@
     height: 100%;
     box-sizing: border-box;
     flex: 0 0 auto;
-    position: sticky;
-    top: 16px;
+    margin-bottom: 32px;
 
+    @include for-tablet-landscape-up {
+      width: 320px;
+      position: sticky;
+      top: 16px;
+      margin-bottom: 0;
+    }
 
     img {
       width: 120px;
@@ -130,6 +137,7 @@
       display: flex;
       flex-direction: column;
       margin-bottom: 32px;
+      text-align: center;
     }
   }
 
