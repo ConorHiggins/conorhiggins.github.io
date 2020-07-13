@@ -75,12 +75,13 @@
           <TimelineEvent :item="item"/>
         </div>
       </div>
+
       <div class="content__column content__column--50">
         <h2>Awards</h2>
         <div class="content__row"
-            v-for="item in awards"
-            :key="item.title">
-          <TimelineEvent :item="item"/>
+            v-for="award in awards"
+            :key="award.title">
+          <TimelineEvent :item="award"/>
         </div>
       </div>
     </div>
