@@ -15,10 +15,10 @@ rsync -avz * ../
 echo 'Now deploying'
 
 # # git init
-# git add -A
-# git commit -m 'deploy'
+git add -A
+git commit -m 'deploy'
 
 # # if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:ConorHiggins/conorhiggins.github.io.git master
+git push -f git@github.com:ConorHiggins/conorhiggins.github.io.git master
 
 cd -
