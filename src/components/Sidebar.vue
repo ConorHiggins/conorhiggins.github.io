@@ -3,7 +3,7 @@
     <div class="sidebar__profile">
       <img src="../assets/avatar.png">
       <h2>Conor Higgins</h2>
-      <h3>Fullstack Engineer, Tech Lead, Wearer of many hats</h3>
+      <h3>Tech Lead, Fullstack Engineer, Product Developer</h3>
     </div>
 
     <div class="sidebar__contact">
