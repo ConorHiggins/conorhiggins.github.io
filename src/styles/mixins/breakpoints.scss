@@ -16,3 +16,6 @@
 @mixin print {
     @media print { @content; }
 }
+@mixin screen {
+    @media screen { @content; }
+}

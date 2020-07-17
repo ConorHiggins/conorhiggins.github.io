@@ -17,8 +17,10 @@
       {{item.subtitle}}
     </h5>
 
-    <p>
-      {{item.what}}
+    <p
+      v-for="(w, i) in item.what"
+      :key="i">
+      {{w}}
     </p>
 
     <div class="timeline-event__tags" v-if="item.skills && item.skills.length">
@@ -43,12 +45,16 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  @import "../styles/mixins/breakpoints";
+
   .timeline-event {
     display: flex;
     flex-direction: column;
     padding: 0 0 0 32px;
     position: relative;
     margin: 16px 0;
+    position: relative;
+    page-break-inside: avoid;
 
     &:before {
       content: ' ';
@@ -80,7 +86,7 @@
 
     &__title {
       font-weight: 600;
-      margin-bottom: 4px;
+      margin-bottom: 4px !important;
     }
 
     &__tags {
@@ -100,6 +106,16 @@
       padding: 4px 12px;
       font-size: 14px;
       margin-bottom: 4px;
+    }
+
+    p {
+      margin-bottom: 8px;
+      page-break-inside: avoid;
+      position: relative;
+    }
+
+    @include print {
+
     }
   }
 </style>

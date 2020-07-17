@@ -23,28 +23,28 @@
     </div>
 
     <div class="sidebar__social">
-      <a href="https://twitter.com/askhiggins" target="_blank">
+      <a href="https://twitter.com/askhiggins" target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
         <span>
           @AskHiggins
         </span>
       </a>
 
-      <a href="https://github.com/ConorHiggins" target="_blank">
+      <a href="https://github.com/ConorHiggins" target="_blank" rel="noopener">
         <i class="fab fa-github"></i>
         <span>
           /ConorHiggins
         </span>
       </a>
 
-      <a href="https://codepen.io/ch1601" target="_blank">
+      <a href="https://codepen.io/ch1601" target="_blank" rel="noopener">
         <i class="fab fa-codepen"></i>
         <span>
           /ch1601
         </span>
       </a>
 
-      <a href="https://www.linkedin.com/in/conorhiggins1601/" target="_blank">
+      <a href="https://www.linkedin.com/in/conorhiggins1601/" target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
         <span>
           /conorhiggins1601

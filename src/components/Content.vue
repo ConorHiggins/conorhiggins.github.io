@@ -132,40 +132,61 @@
             subtitle: '',
             icon: 'far fa-handshake',
             skills: ['Vue', 'Go', 'Coffeescript', 'KnockoutJS', 'Coldfusion', 'Product Analytics (Pendo)', 'SQL (MariaDB)', 'Redis', 'Hiring', 'Planning'],
-            what: "As Technical Lead of Teamwork's main product, I have been responsible for all areas of the product's delivery, including cross-fuctional hiring, product planning and reviews.",
+            what: [
+              'Technical Lead of Teamwork\'s main product, using a variety of languages and frameworks.',
+              'Responsible for hiring and scaling a large multi-disciplinary engineering team. Also responsible for performance management and reviews.',
+              'Responsible for defining technical implementations and architectural decisions.',
+              'Leading product research and planning while being a key contributor via continuous full-stack development.',
+            ],
             when: '2015 - present',
           },
           {
             title: "SANTA",
             subtitle: 'Self-Administered Naming Therapy for Aphasia',
-            skills: ['Research', 'Prototyping (Balsamiq)', 'Firebase', 'Angular', 'Objective-C'],
+            skills: ['Research', 'Prototyping (Balsamiq)', 'Firebase', 'Angular'],
             icon: 'fas fa-flask',
             where: 'Department of Clinical Therapies, UL',
-            what: 'SANTA is a cross-platform web application for users with aphasia. The application uses text-to-speech in order to teach aphasic users to speak and enunciate words. I am responsible for all aspects of the system\'s design, development and user acceptance testing.',
+            what: [
+              'Created Angular and Firebase web-app leveraging text-to-speech services to teach users with aphasia to speak and enunciate words.',
+              'Conducted user observation and acceptance testing throughout clinical trials at University Limerick.',
+            ],
             when: '2014 - 2015',
           },
           {
             title: "Triana Care",
             subtitle: '',
-            skills: ['Prototyping (Balsamiq)', 'Laravel', 'Angular', 'ElasticSearch'],
+            skills: ['Prototyping (Balsamiq)', 'Laravel', 'Angular', 'ElasticSearch', 'SQL'],
             icon: 'fas fa-shapes',
-            what: 'Triana Care has led to the creation of software systems for the US hospice industry to improve the level of patient care. I have been solely responsible for the system\'s user experience and evaluation. I have also contributed to much of the system\'s front-end and back-end architecture.',
+            what: [
+              'Worked with business analyst to gather product requirements and use cases related to patient care in the US hospice industry.',
+              'Designed and developed product solutions using increasingly higher fidelity prototypes.',
+              'Key fullstack contributor on Laravel (and Elastic) back-end and Angular front-end.',
+            ],
             when: '2014 - 2015',
           },
           {
             title: "iTRAC Global",
             subtitle: '',
-            skills: ['Angular', 'Laravel', 'Elasticsearch'],
+            skills: ['Angular', 'Laravel', 'Elasticsearch', 'SQL'],
             icon: 'fas fa-laptop',
-            what: 'iTRAC Global is a global customs and excise software package. As the project’s first and longest-serving developer, I have been responsible for defining much of the system architecture and implementing designs concepts.',
+            what: [
+              'One of the lead developers for a global customs and excise web app, defining the front-end architecture and acting as a key back-end contributor.',
+              'Regularly prototyped and tested new features with key stakeholders.',
+              'Contributed to headless browser export system based on PhantomJS.',
+              'Implemented Elasticsearch (and memcached)',
+            ],
             when: '2012 - 2014',
           },
           {
             title: "22 Touch",
             subtitle: '',
-            skills: ['ExpressionEngine', 'JS'],
+            skills: ['ExpressionEngine', 'PHP', 'SQL', 'JS'],
             icon: 'fas fa-robot',
-            what: '22 Touch is a referral marketing web application. I was involved in both the redesign and implementation of the system, developing a series of new features and designing a genetic algorithm on which the application is heavily dependent.',
+            what: [
+              'Lead front-end and back-end development for major redesign of a referral marketing web application.',
+              'Created custom ExpressionEngine extensions and hooks to support required functionality.',
+              'Created a genetic algorithm responsible for defining communication touch points schedule.'
+            ],
             when: '2012 - 2014',
           },
           {
@@ -173,33 +194,42 @@
             subtitle: '',
             skills: ['JS', 'PHP', 'Flex/Flash Builder'],
             icon: 'fas fa-running',
-            what: 'Elite Edge is a cross-platform sports science application. To date the application has been extensively used by the British and Irish Lions, the National Athlete Development Academy and Munster Rugby. I am responsible for the system\'s requirements gathering, back-end design and front-end development.',
+            what: [
+              'Lead front-end and back-end development on sports science web application used by the Welsh Rugby Union, British & Irish Lions, National Athlete Development Academy and Munster Rugby.',
+            ],
             when: '2010 - 2014',
           },
           {
             title: "Tricycle Interactive Ltd",
             subtitle: '',
-            skills: ['Objective-C', 'PHP', 'JS', 'Flex/Flash Builder'],
+            skills: ['Objective-C', 'PHP', 'JS', 'SQL', 'Flex/Flash Builder'],
             icon: 'far fa-thumbs-up',
-            what: 'I rebuilt and extended the WRU sports science system, creating a suite of new features, implementing a usercentered design approach in the process. Additionally, I led a number of projects for clients including iOS applications for MotorCheck and Opoko.',
+            what: [
+              'Rebuilt and extended athlete monitoring and analytics platform for the Welsh Rugby Union. Led requirements gathering with SMEs and applied a user-centered design process.',
+              'Lead development for various clients in iOS (Objective-C), Flex/Flash Builder, and more.',
+              'Contributor on DocTOT and MotorCheck iOS app series.',
+            ],
             when: '2010 - 2011',
           },
         ],
         education: [
           {
             title: "Ph.D.",
-            subtitle: 'Incomplete',
             where: 'University of Limerick',
             icon: 'fas fa-graduation-cap',
-            what: 'I have developed a number of applications and utilities targeted at the rehabilitation of individuals with aphasia and concomitant cognitive deficits. My research has examined the efficacy of mobile applications in self-guided speech and language therapy.',
-            when: '2006 - 2010',
+            what: [
+              'I have developed a number of applications and utilities targeted at the rehabilitation of individuals with aphasia and concomitant cognitive deficits. My research has examined the efficacy of mobile applications in self-guided speech and language therapy.',
+            ],
+            when: '2006 - 2010 (Incomplete)',
           },
           {
             title: "Undergraduate",
             subtitle: '',
             where: 'University of Limerick',
             icon: 'fas fa-graduation-cap',
-            what: 'I graduated in 2010 with a first class honours, earning a B.Sc. in Music, Media and Performance Technology',
+            what: [
+              'I graduated in 2010 with a first class honours, earning a B.Sc. in Music, Media and Performance Technology',
+            ],
             when: '2006 - 2010',
           },
         ],
@@ -257,6 +287,12 @@
       position: relative;
 
       @include print {
+        margin-bottom: 0;
+        border-radius: 0;
+
+        h2 {
+          font-size: 24px;
+        }
 
         &:after {
           content: ' ';
@@ -267,7 +303,6 @@
           left: 32px;
           right: 32px;
         }
-        margin-bottom: 0;
       }
     }
 
@@ -309,18 +344,20 @@
     }
 
     @include for-phone-only {
-      .content__column,
-      .content__column--50 {
-        flex: 1 0 100%;
-        padding: 0;
+      @include screen {
+        .content__column,
+        .content__column--50 {
+          flex: 1 0 100%;
+          padding: 0;
 
-        + .content__column {
-          margin-top: 16px;
+          + .content__column {
+            margin-top: 16px;
+          }
         }
-      }
 
-      .content__skills {
-        margin: 32px 0;
+        .content__skills {
+          margin: 32px 0;
+        }
       }
     }
 
@@ -331,6 +368,9 @@
       flex-wrap: wrap;
       padding: 16px 0;
 
+      @include print {
+        display: none;
+      }
     }
 
     .logos img {
