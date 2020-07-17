@@ -45,14 +45,14 @@
 
       <div class="content__row">
         <div class="logos">
-          <img src="../assets/HTML5.svg">
-          <img src="../assets/Vue.svg">
-          <img src="../assets/Go.svg">
-          <img src="../assets/CSS3.svg">
-          <img src="../assets/JS.svg">
-          <img src="../assets/Knockout.svg">
-          <img src="../assets/LESS.svg">
-          <img src="../assets/SASS.svg">
+          <img src="../assets/HTML5.svg" alt="HTML5">
+          <img src="../assets/Vue.svg" alt="Vue">
+          <img src="../assets/Go.svg" alt="Go">
+          <img src="../assets/CSS3.svg" alt="CSS3">
+          <img src="../assets/JS.svg" alt="Javascript">
+          <img src="../assets/Knockout.svg" alt="KnockoutJS">
+          <img src="../assets/LESS.svg" alt="LESS">
+          <img src="../assets/SASS.svg" alt="SASS">
         </div>
       </div>
     </div>
@@ -254,6 +254,21 @@
       border-radius: 8px;
       padding: 32px;
       margin-bottom: 32px;
+      position: relative;
+
+      @include print {
+
+        &:after {
+          content: ' ';
+          background-color: #eee;
+          position: absolute;
+          height: 1px;
+          bottom: 0;
+          left: 32px;
+          right: 32px;
+        }
+        margin-bottom: 0;
+      }
     }
 
     &__section:last-child {

@@ -53,6 +53,10 @@
     @include for-tablet-landscape-up {
       flex-direction: row;
     }
+
+    @include print {
+      padding: 0;
+    }
   }
 
 </style>
