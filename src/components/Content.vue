@@ -206,22 +206,22 @@
         awards: [
           {
             title: "Accenture Academic Innovation Award",
-            icon: 'fas fa-trophy',
+            icon: 'fas fa-award',
             when: '2010',
           },
           {
             title: "University of Limerick Advanced Scholar Scheme",
-            icon: 'fas fa-trophy',
+            icon: 'fas fa-award',
             when: '2010',
           },
           {
             title: "Tweak Festival Student Showcase",
-            icon: 'fas fa-trophy',
+            icon: 'fas fa-award',
             when: '2009',
           },
           {
             title: "University of Limerick President's List",
-            icon: 'fas fa-trophy',
+            icon: 'fas fa-award',
             when: '2007 - 2010',
           },
         ]
