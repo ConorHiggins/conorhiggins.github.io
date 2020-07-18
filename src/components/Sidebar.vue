@@ -8,14 +8,14 @@
 
     <div class="sidebar__contact">
       <span>
-        <i class="fas fa-mobile-alt"></i>
+        <font-awesome-icon icon="mobile-alt" />
         <a href="tel:+353857152262">
           085 715 2262
         </a>
       </span>
 
       <span>
-        <i class="far fa-envelope-open"></i>
+        <font-awesome-icon icon="at" />
         <a href="mailto:info@conorhiggins.com">
           info@conorhiggins.com
         </a>
@@ -23,29 +23,29 @@
     </div>
 
     <div class="sidebar__social">
-      <a href="https://twitter.com/askhiggins" target="_blank" rel="noopener">
-        <i class="fab fa-twitter"></i>
+      <a href="https://twitter.com/askhiggins" target="_blank" aria-label="Twitter" rel="noopener">
+        <font-awesome-icon :icon="['fab', 'twitter']" />
         <span>
           @AskHiggins
         </span>
       </a>
 
-      <a href="https://github.com/ConorHiggins" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
+      <a href="https://github.com/ConorHiggins" target="_blank" aria-label="Github" rel="noopener">
+        <font-awesome-icon :icon="['fab', 'github']" />
         <span>
           /ConorHiggins
         </span>
       </a>
 
-      <a href="https://codepen.io/ch1601" target="_blank" rel="noopener">
-        <i class="fab fa-codepen"></i>
+      <a href="https://codepen.io/ch1601" target="_blank" aria-label="Codepen" rel="noopener">
+        <font-awesome-icon :icon="['fab', 'codepen']" />
         <span>
           /ch1601
         </span>
       </a>
 
-      <a href="https://www.linkedin.com/in/conorhiggins1601/" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin-in"></i>
+      <a href="https://www.linkedin.com/in/conorhiggins1601/" target="_blank" aria-label="LinkedIn" rel="noopener">
+        <font-awesome-icon :icon="['fab', 'linkedin-in']" />
         <span>
           /conorhiggins1601
         </span>
@@ -55,6 +55,14 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { faMobileAlt, faAt } from '@fortawesome/free-solid-svg-icons'
+  import { faTwitter, faGithub, faCodepen, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+  library.add(faMobileAlt, faAt, faTwitter, faGithub, faCodepen, faLinkedinIn)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
     name: 'Sidebar'
@@ -131,7 +139,8 @@
         }
       }
 
-      i {
+      i,
+      svg {
         margin-right: 8px;
       }
 
@@ -166,7 +175,8 @@
         }
       }
 
-      i {
+      i,
+      svg {
         margin: 0 8px;
         font-size: 20px;
       }

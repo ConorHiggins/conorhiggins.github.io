@@ -130,7 +130,7 @@
           {
             title: "Teamwork.com",
             subtitle: '',
-            icon: 'far fa-handshake',
+            icon: 'tasks',
             skills: ['Vue', 'Go', 'Coffeescript', 'KnockoutJS', 'Coldfusion', 'Product Analytics (Pendo)', 'SQL (MariaDB)', 'Redis', 'Hiring', 'Planning'],
             what: [
               'Technical Lead of Teamwork\'s main product, using a variety of languages and frameworks.',
@@ -144,7 +144,7 @@
             title: "SANTA",
             subtitle: 'Self-Administered Naming Therapy for Aphasia',
             skills: ['Research', 'Prototyping (Balsamiq)', 'Firebase', 'Angular'],
-            icon: 'fas fa-flask',
+            icon: 'random',
             where: 'Department of Clinical Therapies, UL',
             what: [
               'Created Angular and Firebase web-app leveraging text-to-speech services to teach users with aphasia to speak and enunciate words.',
@@ -156,7 +156,7 @@
             title: "Triana Care",
             subtitle: '',
             skills: ['Prototyping (Balsamiq)', 'Laravel', 'Angular', 'ElasticSearch', 'SQL'],
-            icon: 'fas fa-shapes',
+            icon: 'shapes',
             what: [
               'Worked with business analyst to gather product requirements and use cases related to patient care in the US hospice industry.',
               'Designed and developed product solutions using increasingly higher fidelity prototypes.',
@@ -168,7 +168,7 @@
             title: "iTRAC Global",
             subtitle: '',
             skills: ['Angular', 'Laravel', 'Elasticsearch', 'SQL'],
-            icon: 'fas fa-laptop',
+            icon: 'laptop-code',
             what: [
               'One of the lead developers for a global customs and excise web app, defining the front-end architecture and acting as a key back-end contributor.',
               'Regularly prototyped and tested new features with key stakeholders.',
@@ -181,9 +181,9 @@
             title: "22 Touch",
             subtitle: '',
             skills: ['ExpressionEngine', 'PHP', 'SQL', 'JS'],
-            icon: 'fas fa-robot',
+            icon: 'calendar-alt',
             what: [
-              'Lead front-end and back-end development for major redesign of a referral marketing web application.',
+              'Led front-end and back-end development for major redesign of a referral marketing web application.',
               'Created custom ExpressionEngine extensions and hooks to support required functionality.',
               'Created a genetic algorithm responsible for defining communication touch points schedule.'
             ],
@@ -193,9 +193,9 @@
             title: "Elite Edge",
             subtitle: '',
             skills: ['JS', 'PHP', 'Flex/Flash Builder'],
-            icon: 'fas fa-running',
+            icon: 'chart-line',
             what: [
-              'Lead front-end and back-end development on sports science web application used by the Welsh Rugby Union, British & Irish Lions, National Athlete Development Academy and Munster Rugby.',
+              'Led front-end and back-end development on sports science web application used by the Welsh Rugby Union, British & Irish Lions, National Athlete Development Academy and Munster Rugby.',
             ],
             when: '2010 - 2014',
           },
@@ -203,10 +203,10 @@
             title: "Tricycle Interactive Ltd",
             subtitle: '',
             skills: ['Objective-C', 'PHP', 'JS', 'SQL', 'Flex/Flash Builder'],
-            icon: 'far fa-thumbs-up',
+            icon: 'code',
             what: [
               'Rebuilt and extended athlete monitoring and analytics platform for the Welsh Rugby Union. Led requirements gathering with SMEs and applied a user-centered design process.',
-              'Lead development for various clients in iOS (Objective-C), Flex/Flash Builder, and more.',
+              'Led development for various clients in iOS (Objective-C), Flex/Flash Builder, and more.',
               'Contributor on DocTOT and MotorCheck iOS app series.',
             ],
             when: '2010 - 2011',
@@ -216,7 +216,7 @@
           {
             title: "Ph.D.",
             where: 'University of Limerick',
-            icon: 'fas fa-graduation-cap',
+            icon: 'graduation-cap',
             what: [
               'I have developed a number of applications and utilities targeted at the rehabilitation of individuals with aphasia and concomitant cognitive deficits. My research has examined the efficacy of mobile applications in self-guided speech and language therapy.',
             ],
@@ -226,7 +226,7 @@
             title: "Undergraduate",
             subtitle: '',
             where: 'University of Limerick',
-            icon: 'fas fa-graduation-cap',
+            icon: 'graduation-cap',
             what: [
               'I graduated in 2010 with a first class honours, earning a B.Sc. in Music, Media and Performance Technology',
             ],
@@ -236,22 +236,22 @@
         awards: [
           {
             title: "Accenture Academic Innovation Award",
-            icon: 'fas fa-award',
+            icon: 'award',
             when: '2010',
           },
           {
             title: "University of Limerick Advanced Scholar Scheme",
-            icon: 'fas fa-award',
+            icon: 'award',
             when: '2010',
           },
           {
             title: "Tweak Festival Student Showcase",
-            icon: 'fas fa-award',
+            icon: 'award',
             when: '2009',
           },
           {
             title: "University of Limerick President's List",
-            icon: 'fas fa-award',
+            icon: 'award',
             when: '2007 - 2010',
           },
         ]

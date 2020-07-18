@@ -2,7 +2,7 @@
   <div class="timeline-event">
 
     <span class="timeline-event__node">
-      <i :class="item.icon"></i>
+      <font-awesome-icon :icon="['fas', item.icon]" />
     </span>
 
     <span class="timeline-event__date">
@@ -23,8 +23,8 @@
       {{w}}
     </p>
 
-    <div class="timeline-event__tags" v-if="item.skills && item.skills.length">
-
+    <div class="timeline-event__tags"
+      v-if="item.skills && item.skills.length">
       <span class="timeline-event__tag"
         v-for="skill in item.skills"
         :key="skill">
@@ -35,6 +35,14 @@
 </template>
 
 <script>
+  import Vue from 'vue'
+  import { library } from '@fortawesome/fontawesome-svg-core'
+  import { faGraduationCap, faAward, faTasks, faRandom, faShapes, faLaptopCode, faCalendarAlt, faChartLine, faCode} from '@fortawesome/free-solid-svg-icons'
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+  library.add(faGraduationCap, faAward, faTasks, faRandom, faShapes, faLaptopCode, faCalendarAlt, faChartLine, faCode)
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
+
   export default {
     name: 'TimelineEvent',
     props: [
