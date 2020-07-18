@@ -17,4 +17,4 @@ jobs:
         ftp-username: ${{ secrets.FTP_USER }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: dist
-        git-ftp-args: --remote-root='/conorhiggins.com/__deploy'
+        git-ftp-args: --remote-root=/conorhiggins.com/__deploy
