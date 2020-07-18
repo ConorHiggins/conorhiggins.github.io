@@ -32,6 +32,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  @import "../styles/variables/colors";
+
   .progress {
     padding: 8px 0;
     display: flex;
@@ -42,7 +44,7 @@
     }
 
     &__bar {
-      background-color: #eee;
+      background-color: $color--accent;
       position: relative;
       height: 5px;
       border-radius: 2px;

@@ -65,6 +65,7 @@
 <style lang="scss">
 
   @import "../styles/mixins/breakpoints";
+  @import "../styles/variables/colors";
 
   h1, h3 {
     margin: 0;
@@ -79,9 +80,9 @@
     flex-direction: column;
     align-items: center;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: $color--primary;
     border-radius: 8px;
-    color: #ffffff;
+    color: $color--white;
     height: 100%;
     box-sizing: border-box;
     flex: 0 0 auto;
@@ -158,7 +159,7 @@
       padding: 10px;
 
       a {
-        color: white;
+        color: $color--white;
 
         span {
           display: none;

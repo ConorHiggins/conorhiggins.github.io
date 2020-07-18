@@ -46,6 +46,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "../styles/mixins/breakpoints";
+  @import "../styles/variables/colors";
 
   .timeline-event {
     display: flex;
@@ -63,7 +64,7 @@
       top: 0;
       bottom: 0;
       width: 2px;
-      background-color: #f0f0f0;
+      background-color: $color--timeline-track;
     }
 
     &__date {
@@ -81,7 +82,7 @@
       display: flex;
       align-items: baseline;
       justify-content: center;
-      color: #4050b5;
+      color: $color--secondary;
     }
 
     &__title {
@@ -102,7 +103,7 @@
       justify-content: center;
       margin-right: 8px;
       border-radius: 12px;
-      background-color: #f2f2f2;
+      background-color: $color--tag;
       padding: 4px 12px;
       font-size: 14px;
       margin-bottom: 4px;

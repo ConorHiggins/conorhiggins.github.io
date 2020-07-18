@@ -263,6 +263,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "../styles/mixins/breakpoints";
+  @import "../styles/variables/colors";
 
   .content {
     display: flex;
@@ -296,7 +297,7 @@
 
         &:after {
           content: ' ';
-          background-color: #eee;
+          background-color: $color--accent;
           position: absolute;
           height: 1px;
           bottom: 0;
