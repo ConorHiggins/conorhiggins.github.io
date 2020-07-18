@@ -130,7 +130,7 @@
           {
             title: "Teamwork.com",
             subtitle: '',
-            icon: 'tasks',
+            icon: 'users',
             skills: ['Vue', 'Go', 'Coffeescript', 'KnockoutJS', 'Coldfusion', 'Product Analytics (Pendo)', 'SQL (MariaDB)', 'Redis', 'Hiring', 'Planning'],
             what: [
               'Technical Lead of Teamwork\'s main product, using a variety of languages and frameworks.',

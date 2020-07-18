@@ -37,10 +37,10 @@
 <script>
   import Vue from 'vue'
   import { library } from '@fortawesome/fontawesome-svg-core'
-  import { faGraduationCap, faAward, faTasks, faRandom, faShapes, faLaptopCode, faCalendarAlt, faChartLine, faCode} from '@fortawesome/free-solid-svg-icons'
+  import { faGraduationCap, faAward, faUsers, faRandom, faShapes, faLaptopCode, faCalendarAlt, faChartLine, faCode} from '@fortawesome/free-solid-svg-icons'
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-  library.add(faGraduationCap, faAward, faTasks, faRandom, faShapes, faLaptopCode, faCalendarAlt, faChartLine, faCode)
+  library.add(faGraduationCap, faAward, faUsers, faRandom, faShapes, faLaptopCode, faCalendarAlt, faChartLine, faCode)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
 
   export default {
