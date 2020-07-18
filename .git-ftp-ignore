@@ -1,0 +1,13 @@
+node_modules
+node_modules*
+dist*
+public*
+src*
+babel.config.js
+vue.config.js
+*.sh
+*.json
+*.md
+*.lock
+*/.gitignore
+.git*
