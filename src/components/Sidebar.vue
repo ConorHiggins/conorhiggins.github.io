@@ -10,7 +10,7 @@
       <span>
         <font-awesome-icon icon="mobile-alt" />
         <a href="tel:+353857152262">
-          085 715 2262
+          +353 85 715 2262
         </a>
       </span>
 
@@ -33,21 +33,21 @@
       <a href="https://github.com/ConorHiggins" target="_blank" aria-label="Github" rel="noopener">
         <font-awesome-icon :icon="['fab', 'github']" />
         <span>
-          /ConorHiggins
+          ConorHiggins
         </span>
       </a>
 
       <a href="https://codepen.io/ch1601" target="_blank" aria-label="Codepen" rel="noopener">
         <font-awesome-icon :icon="['fab', 'codepen']" />
         <span>
-          /ch1601
+          ch1601
         </span>
       </a>
 
       <a href="https://www.linkedin.com/in/conorhiggins1601/" target="_blank" aria-label="LinkedIn" rel="noopener">
         <font-awesome-icon :icon="['fab', 'linkedin-in']" />
         <span>
-          /conorhiggins1601
+          conorhiggins1601
         </span>
       </a>
     </div>
@@ -99,7 +99,7 @@
     @include print {
       padding: 24px;
       align-items: baseline;
-      border-radius: 0;
+      border-radius: 4px;
       margin-bottom: 0;
     }
 
@@ -154,7 +154,8 @@
           padding: 0;
         }
 
-        i {
+        i,
+        svg {
           font-size: 12px;
           margin: 0 8px;
         }
@@ -190,7 +191,8 @@
           font-size: 14px;
           text-decoration: none;
 
-          i {
+          i,
+          svg {
             font-size: 12px;
           }
 
